@@ -1,0 +1,21 @@
+
+<div class="basket-items">
+<div class="basket">
+<app-basket-item *ngFor="let item of basket.items" [BasketItem]="item"></app-basket-item>
+</div>
+
+<div class="summary">
+<img src="https://production-orderpay.s3.amazonaws.com/brand/images/logo/image/2a33d0ef-0ed6-4eeb-a5f9-c8d24901a870.jpg" style="border-radius: 8px;">
+<div class="title">
+    <p>Tortilla</p>
+</div>
+<p class="description">
+    Please take a moment to review your order details below. Ensure that the quantities and items listed are accurate and meet your expectations. This is your final opportunity to make any changes or corrections to your order. Once you finalize the order, it will be processed immediately, and no further modifications can be made. If you have any special instructions or requests, please add them now. We strive to provide the best possible service, and your satisfaction is our top priority. Should you need any assistance or have any questions, do not hesitate to contact our customer support team. Thank you for choosing our store for your shopping needs. We appreciate your business and hope you have a great experience with our products and services. Your order will be handled with care and delivered to you promptly.
+</p>
+<div class="basket-summary">
+    <p>Items Total:</p><p class="money">{{basket.totalPrice +55| currency:'$'}}</p>
+</div>
+<button class="btn">FINALIZE</button>
+</div>
+</div>
+

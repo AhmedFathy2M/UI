@@ -1,0 +1,31 @@
+<div>
+    <div class="banner">
+        <div class="marquee">
+            <p>JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯 JOIN THE CLUB 🌯🌯</p>
+           
+        </div>
+    </div>
+    <div class="nav"> 
+        <a class="section" [routerLink]="['menu']">MENU</a>
+        <a class="section">RESTAURANTS</a>
+        <a class="section" [routerLink]="['whats-on']" >FRESH SCOOP</a>
+        <a class="title" [routerLink]="['']">EGYPTIAN TORTILLA</a>
+        <a class="section" [routerLink]="['club-tortilla']">TORTILLA CLUB</a>
+        <a class="section" [routerLink]="['careers']">CAREERS</a>
+        <a (click)="openDialog()"> check</a>
+        <div class="dropdown" #dropdown *ngIf="Currentuser.name"> <a class="section">Welcome {{Currentuser.name}}</a>
+            <div class="dropdown-menu" [ngClass]="{ 'dropdown-menu-active': toggle }">
+            <p (click)="logout()">logout</p>
+            <p [routerLink]="['/basket']">Basket</p>
+            <p>{{basket.itemsCount}}</p>
+
+            </div>
+        </div>
+        <a class="section" [routerLink]="['register']" *ngIf="!Currentuser.name">Login/Register</a>
+        <i id="bars" class="fa-solid fa-bars fa-2x" style="color: white; cursor: pointer;"></i>
+    </div>
+   
+
+
+</div>
+

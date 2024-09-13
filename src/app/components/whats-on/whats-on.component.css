@@ -1,0 +1,92 @@
+.whats-on{
+    display: flex;
+    align-items: center;
+    background-color: #cae0e6;
+    flex-direction: column;
+    padding: 45px;
+}
+.title{
+color: white;
+font-size: 5.7em;
+text-shadow: 7px 2px 1px black;
+font-weight: 900;
+}
+.title-sub{
+    font-size: 1.2em;
+    padding: 0;
+    margin: 0;
+    padding: 7px;
+}
+/*|||||||| NEWS CARDS ||||||||||*/
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 35px;
+    background-color: #cae0e6;
+    flex-wrap: wrap;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    background-color: #fffaf0;
+    max-width: 625px; 
+    flex-direction: column;   
+    box-shadow: 7px 1px 1px #8d9da1;
+    transition: transform 0.2s ease-in;
+    cursor: pointer;
+    flex: 50%;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+}
+.card:hover{
+    transform: translateY(-13px);
+}
+.arrow{
+    transition:transform 0.2s ease-in ;
+}
+.card:hover .arrow{
+    transform: translateX(13px);
+}
+.card-title{
+  color: #0f1a82;
+  font-size: 2.2em;  
+  font-weight: 600;
+  padding: 20px;
+}
+.card-para{
+    color: black;
+    padding: 7px;
+    padding-left: 20px;
+}
+.arrow-container{
+    display: flex;
+    justify-content: right;
+    padding-right: 25px;
+}
+
+.arrow
+{
+    margin-top: 8px;
+    max-width: 25px;
+    max-height: 25px;
+    padding-bottom: 15px;
+}
+/*||| UNITED GOALS|||*/
+.united-goals{
+    background-color: #fa5a3c;
+    min-height: 250px;
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+}
+.united-goals-title{
+    font-size: 4.2em;
+    color: white;
+    text-shadow: 7px 1px 1px black;
+    max-width: 700px;
+    font-weight: 800;
+    text-align: center;
+}

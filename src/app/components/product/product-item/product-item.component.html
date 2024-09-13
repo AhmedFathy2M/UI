@@ -1,0 +1,10 @@
+<div class="card">
+<img class="img" [src]="product.image">
+<p class="name">{{product.name}}</p>
+<p class="description">{{product.description}}</p>
+<div class="icons"> 
+<i class="fa-solid fa-plus fa-2x" style="cursor: pointer;" (click)="addItem(product)"></i>
+<i class="fa-solid fa-minus fa-2x" style="cursor: pointer;" (click)="removeItem(product)"></i>
+</div>
+
+</div>

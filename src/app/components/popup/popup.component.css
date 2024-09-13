@@ -1,0 +1,18 @@
+.popup{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 500px;
+    min-height: 500px;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 15px;
+    background-color: bisque;
+    width: 100%;
+    box-sizing: border-box;
+}

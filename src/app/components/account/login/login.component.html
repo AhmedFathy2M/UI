@@ -1,0 +1,15 @@
+<div class="login"> 
+    <form [formGroup]="this.group" class="form" (ngSubmit)="login()"> 
+
+        <label>Email</label>
+        <input type="email" formControlName="email">
+        <span *ngIf="group.get('email')?.invalid && group.get('email')?.touched && group.get('email')?.errors?.['email']" class="error"> <i class="fa-solid fa-xmark" style="color: red;"></i>Please type a valid email. </span>
+        <span *ngIf="group.get('email')?.invalid && group.get('email')?.touched" class="error"> <i class="fa-solid fa-xmark" style="color: red;"></i>Email field is required. </span>
+        <label>Password</label>
+        <input type="password" formControlName="password">
+        <span *ngIf="group.get('password')?.invalid && group.get('password')?.touched" class="error"> <i class="fa-solid fa-xmark" style="color: red;"></i>Password field is required. </span>
+        <p class="registered" [routerLink]="['/register']">Not registered yet?</p>
+        <button type="submit" class="btn" [disabled]="this.group.invalid">Login</button>
+    </form>
+<div class="img"> <img src="https://a.storyblok.com/f/158888/800x1200/0f030c8041/build-it-your-way.jpg/m/768x0"> </div>
+</div>

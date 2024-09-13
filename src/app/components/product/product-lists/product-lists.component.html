@@ -1,0 +1,38 @@
+<div class="hero">
+
+<div class="menu-description">
+<p class="title">MENU</p>
+<p class="description">Our dishes are made from scratch using fresh</p>
+<p class="description">quality ingredients. You get to pick what goes</p>
+<p class="description">inside. There are millions of ways to burrito...</p>
+<p class="slogan">Fresh. Tasty. Authentic. </p>
+<div class="buttons">
+    <button class="main-button"> NUTRITION & ALLERGENS</button>
+    <button class="secondary-button">INGREDIENTS</button>
+</div>
+</div>
+<div class="image">
+<img src="https://a.storyblok.com/f/158888/800x400/e3d73a96fa/menu-header.jpg/m/768x0">
+</div> 
+</div>
+
+<div class="filter">
+    
+    <input type="search" class="search" placeholder="Search" #searchInput>
+    <select #categorySelect (change)="selectCategory(categorySelect.value)">
+        <option value="">All</option>
+        <option value="1">Food</option>
+        <option value="2">Beverage</option>
+    </select>
+    <p class="result">results: {{pageProducts.totalCount}}</p>
+    
+</div>
+
+<div class="menu">
+<app-product-item *ngFor="let product of pageProducts.data " [product]="product"></app-product-item>
+</div>
+<div class="pagination" *ngIf="pageProducts.pagesNumber>0">
+    <p (click)="selectPage(pageNumber,categorySelect.value)" class="page" *ngFor="let pageNumber of getPageNumbers(pageProducts.pagesNumber)">
+        {{ pageNumber }}
+    </p>
+</div>

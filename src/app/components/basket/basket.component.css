@@ -1,0 +1,76 @@
+.basket-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:35px;
+    
+}
+.basket{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.summary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 10px 10px 10px;
+    flex: 33%;
+    border: 1px solid brown;
+    max-width: 700px;
+    margin: 25px;
+    border-radius: 25px;
+    background-color: #91142d;
+}
+.description{
+    max-width: 628px;
+    font-size: 1.2em;
+    color: white;
+}
+.title{
+    min-height: 75px;
+    min-width: 75px;
+    background-color: #fa5a3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.9em;
+    font-weight: 800;
+    color: whitesmoke;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: -55px;
+}
+.basket-summary{
+    width: 100%;
+  display: flex;
+  gap: 10px;
+   justify-content: center;
+  color: whitesmoke;
+  font-size: 1.7em;
+}
+.money{
+    color: #FFDF00;
+    font-weight: 900;
+}
+.btn{
+    min-width: 200px;
+    height: 47px;
+    border-style: none;
+    border-radius: 7px;
+    font-size: 1.2em;
+    font-weight: 800;
+    background-color: #fa5a3c;
+    box-shadow: 4px 1px 1px black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,32 @@
+.card{
+   min-width: 287px;
+   min-height: 371px;
+   justify-content: center;
+   align-items: center;
+}
+.card .img{
+    max-height: 230px;
+    max-width: 287px;
+}
+.card .name{
+font-size: 1.6em;
+color: black;
+font-weight: 900;
+padding-bottom: 15px;
+text-align: center;
+
+}
+.card .description{
+ font-size: 1.2em;
+color: black;
+font-weight: 500;
+max-width: 255px;
+line-height: 1.5;
+}
+.icons{
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}

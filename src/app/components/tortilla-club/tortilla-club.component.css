@@ -1,0 +1,161 @@
+.join-club{
+    background-color: #cae0e6;
+    min-height: 375px;
+    padding: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    flex-wrap: wrap;
+}
+.title{
+    max-width: 467px;
+    font-size: 5.5em;
+    font-weight: 800;
+    text-shadow: 8px 1px 1px black;
+    color: #fa5a3c;
+    padding: 15px;
+}
+.sub-title{
+    font-size: 1.2em;
+    color: black;
+    font-weight: 200;
+    padding: 10px;
+    max-width: 467px;
+}
+.button{
+    min-width: 125px;
+    min-height: 45px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #fa5a3c;
+    color: white;
+    font-size: 1.0em;
+    font-weight: 600;
+    box-shadow: 4px 1px 1px black;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.button:hover{
+    background-color: #fffaf0;
+    color: black;
+}
+
+/* ||||||||| MARQUE*/
+.banner {
+    overflow: hidden;
+    white-space: nowrap;
+    background: #fa5a3c; 
+    color: #fffaf0;
+}
+
+.marquee {
+    display: flex;
+    width: 200%; 
+    animation: marquee 20s linear infinite; 
+}
+
+.marquee p {
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+/*||| CLUB PERKS*/
+.club-perks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    background-color: #ffd462;
+    padding: 25px;
+}
+.title-perks{
+    color: white;
+    font-size: 4.8em;
+    font-weight: 800;
+    text-shadow: 7px 1px 1px black;
+    padding: 25px;
+    text-align: center;
+}
+.perks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    flex-wrap: wrap;
+}
+.perk-img{
+    max-width: 338px;
+    max-height: 338px;
+}
+.perk-text1{
+ font-size: 2.4em;
+ font-weight: 900;
+ padding: 15px;
+ max-width: 270px;
+ text-align: center;
+}
+.perk-text2{
+ font-size: 1.3em;
+ font-weight: 600;
+ padding: 15px;
+ max-width: 320px;
+ text-align: center;
+}
+/*|||||| HOW IT WORKS||||||||*/
+.howitworks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 35px;
+    padding: 55px;
+    background-color: #fffaf0;
+    flex-wrap: wrap;
+}
+.howitworks-image{
+    max-width: 620px;
+    max-height: 620px;
+}
+.howitworks-description{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 35p;
+    flex-direction: column;
+    min-height: 620px;
+    padding-top: 25px;
+
+    
+}
+.howitworks-title{
+    font-size: 4.9em;
+    color:#fa5a3c;
+    font-weight: 800;
+    text-shadow: 7px 2px 2px black;
+    text-align: center;
+}
+.howitworks-no{
+    font-size: 1.5em;
+    font-weight: 800;
+    padding-top: 25px;
+}
+.howitworks-paragraph{
+    max-width: 468px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 0.9em;
+}

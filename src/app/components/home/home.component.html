@@ -1,0 +1,79 @@
+<div class="hero"> 
+<video src="//c2b1645e76dd0b13c008ff98059d8c70.cdn.bubble.io/f1703104193183x133933897008318600/home_header_1.mp4" loop autoplay>
+</video>
+<div class="marquee">
+    <div class="marquee-text">FILLING FRESH FAST FILLING FRESH FAST FILLING FRESH FAST FILLING FRESH FAST FILLING FRESH FAST FILLING FRESH FAST FILLING FRESH FAST FILLING FRESH FAST FILLING FRESH FAST FILLING FRESH FAST FILLING FRESH FAST FILLING FRESH FAST</div>
+  </div>
+</div>
+
+<div class="menu">
+<p class="menu-title">OUR FOOD</p>
+<div class="foods">
+ <app-product-item  *ngFor="let item of products.data | slice:0:3" [product]="item"> </app-product-item>
+</div>
+</div>
+<div class="whats-on">
+ <p class="whats-on-title">What's on</p>
+ <div class="cards">
+ <div class="card-item">
+    <img src="https://a.storyblok.com/f/158888/3750x1875/e4b07daf42/email_fotm-june_goat.jpg/m/768x0">
+    <p class="title">THE GREATEST (BURRITO) OF ALL TIME </p>
+    <p class="sub-title">Made by love...</p>
+    <p class="description">INTRODUCING THE FLAVOUR OF THE...</p>
+    <div class="arrow-container">
+     <img class="arrow" src="https://www.tortilla.co.uk/assets/images/chevron-blue.svg">
+    </div>
+  
+ </div>
+ <div class="card-item">
+    <img src="https://a.storyblok.com/f/158888/600x338/eb87c069b1/dip-gif-for-email-with-text-small.gif/m/768x0">
+    <p class="title">What's Up Salsa Lovers? </p>
+    <p class="sub-title">Made by love...</p>
+    <p class="description">We're injecting more flavour & fun into the menu this month, including a NEW and improved salsa range and collaborating with Uber Eats to celebrate...</p>
+    <div class="arrow-container">
+     <img class="arrow" src="https://www.tortilla.co.uk/assets/images/chevron-blue.svg">
+    </div>
+ </div>
+ </div>
+</div>
+<div class="seperator">
+    <div class="seperator-text">Burritos Bowls Tacos Nachos Burritos Bowls Tacos Nachos Burritos Bowls Tacos Nachos Burritos Bowls Tacos Nachos Burritos Bowls Tacos Nachos Burritos Bowls Tacos Nachos Burritos Bowls Tacos Nachos Burritos Bowls Tacos Nachos Burritos Bowls Tacos Nachos Burritos Bowls Tacos Nachos Burritos Bowls Tacos Nachos Burritos Bowls Tacos Nachos Burritos Bowls Tacos Nachos Burritos Bowls Tacos Nachos Burritos Bowls Tacos Nachos Burritos Bowls Tacos Nachos Burritos Bowls Tacos Nachos Burritos Bowls Tacos Nachos Burritos Bowls Tacos Nachos Burritos Bowls Tacos Nachos </div>
+</div>
+<div class="contact-us">
+<p class="lets-talk">LET'S TALK</p>
+<p class="lets-talk-description">If you're as crazy about burritos as we are, join our mailing list for food, openings & offers. We'll fill your stomachs, not your inbox - promise! </p>
+<form (ngSubmit)="contact()"> 
+<div class="input-row">
+    <div class="input-col">
+        <label>Name *</label>
+        <input placeholder="First name">
+    </div>
+    <div class="input-col">
+        <label>Email *</label>
+        <input placeholder="Email" type="email">
+    </div>
+    
+</div>
+<div class="input-row">
+    <div class="input-col">
+        <label>Location *</label>
+        <select>
+            <option>Cairo</option>
+            <option>Beni-Suef</option>
+            <option>Minia</option>
+            <option>Alexandria</option>
+        </select>
+    </div>
+    <div class="input-col">
+        <label>Email *</label>
+        <input placeholder="First name" type="email">
+    </div>
+</div>
+ <div class="textarea">
+ <textarea></textarea>
+ </div>
+<button class="button" type="submit">Contact Us</button>
+</form>
+</div>
+
+

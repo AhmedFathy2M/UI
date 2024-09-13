@@ -1,0 +1,120 @@
+.careers{
+    display: flex;
+    flex-direction: column;
+}
+.rollWithUs{
+    background-color: #cae0e6;
+    min-height: 500px;
+    padding: 55px;
+    justify-content: center;
+    
+}
+.rollText{
+    font-size: 5.8em ;
+    font-weight: 800;
+    text-shadow: 9px 1px 2px black;
+    color: whitesmoke;
+    text-align: center;
+}
+.description-rollWithUs{
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 125px;
+}
+.description-rollWithUs img{
+    max-width: 620px;
+    max-height: 420px;
+    font-size: 1.2em;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+.description-rollWithUs p{
+    max-width: 450px;
+    max-height: 320px;
+    font-size: 1.2em;
+    padding: 10px;
+}
+.values{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fffaf0;
+    padding: 45px;
+    flex-direction: column;
+    gap: 35px;
+}
+.values-title{
+    color: #ffd462;
+    font-size: 5.8em;
+    text-shadow: 9px 1px 2px black;
+    font-weight: 900;
+}
+.values-sub-description{
+    max-width: 1041px ;
+    font-size: 1.5em;
+}
+.perks{
+    padding: 25px;
+   display: flex; 
+   justify-content: center;
+   background-color: #ffd462;
+   min-height: 400px;
+   gap: 35px;
+   flex-direction: column;
+   align-items: center;
+}
+.perks-title{ 
+    color: white;
+    font-size: 5.8em;
+    text-shadow: 9px 1px 2px #0f1a82;
+    font-weight: 900; 
+}
+.club-perks{
+   display: flex; 
+   justify-content: center;
+   gap: 45px;
+   flex-wrap: wrap;
+}
+.perk-card img{
+max-height: 311px;
+max-width: 311px;
+}
+.perk-card .main{
+ font-size: 1.6em;
+ font-weight: 900;
+ max-width: 295px;
+ text-align: center;
+ padding: 15px;
+}
+.perk-card .sub{
+    max-width: 295px;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.1em;
+}
+.comment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f1a82;
+    min-height: 400px;
+    flex-direction: column;
+    gap: 55px;
+}
+.comment-title{
+    font-size: 4.5em;
+    color: whitesmoke;
+    font-weight: 900;
+    text-align: center;
+}
+
+.comment-sub{
+    font-size: 1.9em;
+    color: white;
+    font-weight: 600;
+}
